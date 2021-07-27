@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: lightgoldenrodyellow;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+
+  .wrapper {
+    height: 40vh;
+    width: 50vw;
+
+    .searchContainer {
+      padding: 1rem;
+      background: red;
+
+      input[type="text"] {
+        padding: 0.2rem;
+        width: 80%;
+      }
+      button {
+        padding: 0.2rem;
+        width: 20%;
+      }
+    }
+
+    .forecastContainer {
+      flex: 1;
+      display: flex;
+
+      .location {
+        padding: 2rem;
+        flex: 1;
+        background: lightcyan;
+
+        hr {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          border: 0.5px solid #444343;
+        }
+
+        p {
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .condition {
+        padding: 2rem;
+        flex: 1;
+        border: 1px solid lightblue;
+        position: relative;
+        display: grid;
+        place-items: center;
+
+        h4 {
+          font-weight: 700;
+          font-size: 4em;
+        }
+        img {
+          height: 10rem;
+          width: 10rem;
+          z-index: -10;
+          opacity: 80%;
+        }
+      }
+    }
+  }
+}
