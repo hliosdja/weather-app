@@ -8,7 +8,6 @@ function App() {
   //States
   const [weather, setWeather] = useState(null);
   const [city, setCity] = useState("");
-
   useEffect(() => {
     axios
       .get(
@@ -39,13 +38,12 @@ function App() {
       });
   };
 
-  console.log(weather.wind_kph);
-
   return (
     <div className="container">
       {weather && (
         <div className="wrapper">
           <div className="searchContainer">
+            <p>Search location:</p>
             <input type="text" onChange={inputHandler} />
             <button onClick={searchSubmitHandler}>Search</button>
           </div>

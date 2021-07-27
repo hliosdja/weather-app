@@ -21,7 +21,6 @@ body {
 
     .searchContainer {
       padding: 1rem;
-      background: red;
 
       input[type="text"] {
         padding: 0.2rem;
@@ -40,7 +39,6 @@ body {
       .location {
         padding: 2rem;
         flex: 1;
-        background: lightcyan;
 
         hr {
           margin-top: 2rem;
@@ -58,7 +56,6 @@ body {
       .condition {
         padding: 2rem;
         flex: 1;
-        border: 1px solid lightblue;
         position: relative;
         display: grid;
         place-items: center;
