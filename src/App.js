@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&q=London&days=1&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&q=London&days=1&aqi=no&alerts=no`
       )
       .then((data) => {
         setWeather(data.data);
@@ -31,7 +31,7 @@ function App() {
   const searchSubmitHandler = () => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&q=${city}&days=1&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&q=${city}&days=1&aqi=no&alerts=no`
       )
       .then((data) => {
         setWeather(data.data);
